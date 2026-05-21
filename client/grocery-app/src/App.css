@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fffaf1;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: #95ad99;
+  margin-bottom: 24px;
+}
+
+.app {
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: system-ui, sans-serif;
+}
+
+.mood-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.mood-btn {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 0.95em;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mood-btn:hover {
+  opacity: 0.8;
+}
+
+.mood-btn:active {
+  transform: scale(0.98);
+}
+
+/* mood colors */
+.mood-btn.happy {
+  background: #fef4c7;
+  border: 1px solid #eac946;
+  color: #694d00;
+}
+
+.mood-btn.tired {
+  background: #cfe7ff;
+  border: 1px solid #72a9e8;
+  color: #1a396e;
+}
+
+.mood-btn.stressed {
+  background: #ffe7e7;
+  border: 1px solid #e87272;
+  color: #921414;
+}
+
+.mood-btn.excited {
+  background: #e8d8ff;
+  border: 1px solid #9a81d3;
+  color: #492091;
+}
+
+.current-mood {
+  margin-bottom: 22px;
+}
+
+.current-mood .label {
+  font-size: 0.8em;
+  color: #848484;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.current-mood .value {
+  font-size: 1.3em;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+}
+
+.log-section h2 {
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.log-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.log-section li {
+  font-size: 0.9em;
+  color: #000000;
+}
+
+.clear-btn {
+  margin-top: 16px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #ff5e5e;
+  background-color: #fff;
+  color: #000000;
+  font-size: 0.85em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #f0f0f0;
+}
